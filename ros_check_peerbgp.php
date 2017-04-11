@@ -1,3 +1,4 @@
+#!/usr/bin/php -q
 <?php
 /*
 Checar status do peer bgp via API;
