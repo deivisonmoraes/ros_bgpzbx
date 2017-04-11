@@ -32,7 +32,7 @@ if ($api->connect($ip, $user, $password)) {
      }
 
   }
-  echo  json_encode($dados);
+  echo  "[" . json_encode($dados) . "]";
     $api->disconnect();
 }
 
