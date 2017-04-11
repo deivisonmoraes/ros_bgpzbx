@@ -24,7 +24,12 @@ if ($api->connect($ip, $user, $password)) {
       "?name"  => "$peer",
       ".proplist" => "state"
     ));
-    echo $ARRAY[0]['state'];
+    if ($ARRAY['0']['state'] == "established"){
+      echo 1;
+    } else {
+      echo 0;
+    }
+
       break;
 
     case 'uptime':
