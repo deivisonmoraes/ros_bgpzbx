@@ -10,4 +10,12 @@ ros_check_peerbgp.php 200.200.202.2 userbgp passbgp state
 (Retorna state do peer, established, open sent, connect, etc;)
 ros_check_peerbgp.php 200.200.202.2 userbgp passbgp uptime (Retorna Uptime do peer);
 
-- Copiar para /usr/lib/zabbix/externalscripts
+Faça clone do projeto e depois copie os escripts ros_check_peerbgp.php, ros_discover_bgp.php e routeros_api.class.php
+para /usr/lib/zabbix/externalscripts/
+
+Importe o template no zabbix.
+
+Versão do zabbix 3.2.4
+
+Obs: É prudente criar um usuário com permissão apenas de leitura para acessar as informações  de bgp
+e também setar allow address para o ip do zabbix server para que não ocorram problemas.
