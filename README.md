@@ -7,7 +7,7 @@ Examplo:
 ros_discover_bgp.php 200.200.202.2 userbgp passbgp (Descobre peerings ativos no host);
 
 ros_check_peerbgp.php 200.200.202.2 userbgp passbgp state
-(Retorna state do peer, established, open sent, connect, etc;)
+(Retorna 1 para estabilizado e 0 para não estabilizado)
 ros_check_peerbgp.php 200.200.202.2 userbgp passbgp uptime (Retorna Uptime do peer);
 
 Faça clone do projeto e depois copie os escripts ros_check_peerbgp.php, ros_discover_bgp.php e routeros_api.class.php
